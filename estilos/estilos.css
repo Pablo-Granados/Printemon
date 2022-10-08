@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(115deg, rgba(1, 19, 51, 0.8), rgba(5, 43, 77, 0.7)), url(https://www.gratistodo.com/wp-content/uploads/2016/07/09.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logoPoke {
+  display: flex;
+  justify-content: center;
+}
+.logoPoke .logo {
+  width: 70%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: 2em;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2E69B3;
+  opacity: 80%;
+  width: 90%;
+  padding: 2.5rem;
+  border: 0.5em solid whitesmoke;
+  border-radius: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+.cuadro h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: whitesmoke;
+}
+.cuadro .remember {
+  font-size: 1.3rem;
+}
+.cuadro .reglas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  align-items: center;
+}
+@media screen and (min-width: 575px) {
+  .cuadro .reglas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
+.cuadro .beats {
+  display: flex;
+  width: 15em;
+  margin: 0.3em 0px 0.2em 0px;
+  border: 0.02em solid black;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 90%;
+  justify-content: center;
+}
+@media screen and (min-width: 575px) {
+  .cuadro .beats {
+    margin: 1em 1em 0em 1em;
+  }
+}
+
+.elegir-mascota {
+  display: flex;
+  flex-direction: column;
+}
+.elegir-mascota .tarjeta-de-mokepon {
+  width: 15em;
+}
+
+.muestra-poderes {
+  display: flex;
+  margin-top: 0.02em;
+  width: 4em;
+}
+
+.elegir-mascota {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.elegir {
+  margin-top: 0.75rem;
+  height: 10rem;
+  margin-bottom: 0.5rem;
+  width: auto;
+}
+
+#seleccionar-ataque,
+.mascotas-elegidas {
+  justify-content: center;
+}
+
+.tarjeta-de-mokepon input {
+  display: none;
+}
+
+.tarjeta-de-mokepon:has(input:checked) {
+  background-color: #FFCC01;
+  border-radius: 1.87rem;
+  font-size: 1.563rem;
+  color: rgb(10, 10, 10);
+}
+
+.tarjeta-de-mokepon:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(18, 18, 18);
+  border-radius: 1.87rem;
+}
+
+.seleccionar {
+  display: flex;
+  margin: 0.625rem auto 0.5rem;
+  background: rgb(236, 240, 236);
+  color: rgb(9, 9, 9);
+  height: 3.438rem;
+  width: 12.5rem;
+  border-radius: 1.87rem;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.seleccionar:hover {
+  background-color: #FFCC01;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tarjeta-de-mokepon {
+  display: flex;
+  width: 200px;
+  height: 260px;
+  padding: 5px;
+  background: rgb(0, 0, 0);
+  box-sizing: border-box;
+  margin: 10px;
+  border: 2px solid rgb(252, 251, 251);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  flex-direction: column;
+  cursor: pointer;
+  /*Para poner la manito del click*/
+}
+
+.poderes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  width: 28px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+}
+
+.div-poderes {
+  display: flex;
+  justify-content: center;
+}
+
+.remember {
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 7px;
+}
+
+.cuadro2 {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0.5rem;
+  background-color: #2E69B3;
+  opacity: 80%;
+  border: 0.2em solid whitesmoke;
+  border-radius: 2.5em;
+}
+.cuadro2 h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+.cuadro2 .ataque {
+  margin-top: 0.5em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.cuadro2 .ataque img {
+  width: 5%;
+}
+.cuadro2 .botones-ataque {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  bottom: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cuadro2 .boton-ataque {
+  display: flex;
+  margin: 0.25rem;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  font-size: 0.8rem;
+  border: 0.2rem solid white;
+  border-radius: 25px;
+  background: rgb(4, 4, 4);
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.cuadro2 .boton-ataque img {
+  margin-top: -1rem;
+  height: 4rem;
+}
+.cuadro2 .boton-ataque:enabled:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(18, 18, 18);
+  border-radius: 30px;
+}
+.cuadro2 .boton-ataque:enabled:active {
+  background-color: #FFCC01;
+}
+.cuadro2 .boton-ataque:disabled {
+  opacity: 40%;
+  cursor: not-allowed;
+}
+
+.pelea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mascotas-elegidas {
+  display: flex;
+  flex-direction: row;
+}
+
+.cuadro-mascota {
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 6rem;
+  height: 8rem;
+  font-size: 0.8rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: rgb(4, 4, 4);
+  padding-bottom: 10px;
+}
+
+.cuadro-mascota p {
+  margin-top: 0.2rem;
+  margin-bottom: -0.5rem;
+  font-size: 0.8rem;
+  width: 6rem;
+}
+
+#boton-revancha {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 0px;
+  background: rgb(236, 240, 236);
+  color: rgb(9, 9, 9);
+  height: 55px;
+  width: 250px;
+  border-radius: 30px;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+#boton-revancha:hover {
+  background-color: #2E69B3;
+  color: white;
+  border: 2px solid white;
+}
+
+#resultado {
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  border: 1px solid white;
+  border-radius: 1.2rem;
+  background-color: white;
+  color: black;
+  align-items: center;
+  height: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  gap: 1.05rem;
+  padding: 0.3rem 0rem 1rem 0rem;
+}
+
+#mensajeFinal {
+  display: flex;
+  justify-content: center;
+  margin: 0.93rem auto 0rem;
+  background: #FFCC01;
+  color: rgb(0, 0, 0);
+  height: 3.45rem;
+  width: 90%;
+  border: 0.185rem solid black;
+  border-radius: 1.87rem;
+  font-size: 1.2rem;
+  align-items: center;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.vidas {
+  display: flex;
+  color: black;
+  border: 3px solid white;
+  border-radius: 20%;
+  padding: 0rem;
+  background-color: #2E69B3;
+  opacity: 95%;
+  align-items: center;
+  height: 8rem;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 5rem;
+  margin-top: 1rem;
+  font-weight: 900;
+  font-size: medium;
+  justify-content: flex-start;
+}
+
+#versus {
+  display: flex;
+  color: black;
+  border: 3px solid black;
+  border-radius: 100%;
+  background-color: #FFCC01;
+  opacity: 95%;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 85px;
+}
+
+#boton-fuego,
+#boton-agua,
+#boton-tierra {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+#img-ataque-jugador,
+#img-ataque-enemigo {
+  padding: 0px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.img-ataque {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  padding: 12px;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+  font-size: 53px;
+  margin-top: -3px;
+}
+
+.mostrar-mascota {
+  display: flex;
+  width: 10px;
+  height: 40px;
+  justify-content: center;
+}
+
+#mascota-jugador, #mascota-enemigo {
+  margin-top: -15px;
+}
+
+.vidasymascota {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+p.mostrar-mascota {
+  text-decoration: underline;
+}
+
+#imagen-jugador,
+#imagen-enemigo {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+#imagen-jugador .imagen-selected,
+#imagen-enemigo .imagen-selected {
+  width: 83%;
+  margin-top: 1.5rem;
+  height: 60%;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa {
+  border: 2px solid white;
+}
+
+.recorrer-mapa {
+  color: white;
+  font-size: 50px;
+}/*# sourceMappingURL=estilos.css.map */

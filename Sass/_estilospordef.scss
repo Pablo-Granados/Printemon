@@ -1,0 +1,191 @@
+@media screen and (max-width: 575px) {
+
+
+      
+        .botones-ataque{
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-content: center;
+        }
+
+        .h2{
+          margin-top: 0px;
+          margin-bottom: 0.8rem;
+        }
+      
+        .boton-ataque img {
+          height: 4rem;
+        }
+        
+        .boton-ataque{
+    
+          color:white;
+          width:100px;
+          height:130px;
+          font-size:25px;
+          border: 2px solid white;
+          border-radius: 25px;
+          background: rgb(4, 4, 4);
+          cursor:pointer;
+        }
+      
+    
+      
+      #resultado{
+        width: 6rem;
+        font-size: 1rem;
+        text-decoration: solid;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 2rem;
+      }
+      
+      .imagen-selected{
+        
+        margin-top: 1.3rem;
+        height: 5.5em;;
+      
+      }
+    
+      
+      #mensajeFinal{
+          width: 21.5rem;
+          font-size: 1rem;
+          margin: 0.4 auto 0px;
+      }
+      
+      #boton-fuego, #boton-agua, #boton-tierra {
+        height: 1rem;
+        margin-top: 0.1rem;
+      }
+      
+      .img-ataque {
+          height: 1rem;
+          margin-top: 0.1rem;
+      }
+      
+      #img-ataque-jugador, #img-ataque-enemigo {
+          margin-top: 2.5rem;
+      }
+      
+      #versus{
+          height: 4rem;
+          width: 4rem;
+          margin-top: 3rem;
+          font-size: 1.8rem;
+      }
+      
+      .vidas {
+          margin: 1rem;
+          height: 3.1rem;
+          padding-top: 0.4rem;
+          font-size: 1rem;
+          width: 2rem;
+      }
+      
+      #vidas-jugador, #vidas-enemigo {
+          font-size: 3.2rem;
+          margin-top: -0.4rem;
+      }
+      
+    }
+
+
+        
+
+        
+        #seleccionar-mascota{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .seccion{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top:20px;
+        }
+        
+
+        @media screen and (min-width: 576px){
+
+            .cuadro{
+                display: flex;
+                flex-direction: column;
+                background-color: #2E69B3;
+                opacity: 80%;
+                border: 5px solid white;
+                padding: 10px;
+                border-radius: 25px;  
+                margin-top: 10px;
+                
+              }
+            
+              .cuadro-mascota{
+                display: flex;
+                border: 1px solid white;
+                align-items: center;
+                flex-direction: column;
+                color:white;
+                width:180px;
+                height:235px;
+                font-size:25px;
+                border: 2px solid white;
+                border-radius: 25px;
+                background: rgb(4, 4, 4);
+                margin: 0 20px;
+                padding-bottom: 10px;
+                
+              }
+              
+              .cuadro-mascota p{
+                display: flex;
+                text-align: center;
+                margin-top: 9px;
+                margin-bottom: -15px;
+                font-size: 15px;
+                justify-content: center;
+                width: 180px;
+               
+              }
+            
+            
+            .cuadro2{
+                display:flex;
+                margin:auto;
+                flex-direction: column;
+                align-items: center;
+                background-color: #2E69B3;
+                opacity: 80%;
+                border: 5px solid white;
+                padding: 18px;
+                border-radius: 25px;  
+                margin-top: 18px;
+                justify-content: center;
+              
+              }
+              
+              .cuadro2 img{
+                height: 60px;
+                margin-bottom:0px;
+                
+              
+              }
+          }
+          
+          
+
+        
+
+        
+
+        
+
+
+
+        
+      
+        

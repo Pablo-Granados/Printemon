@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8 /">
+    <title>POKEMON</title>
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <!-- <link rel="stylesheet" href="./css//stylemokeponmobile.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="./imagenes/Pokeball_icon-icons.com_67533.png" rel="icon" type="image/x-icon" />
+
+</head>
+
+<body>
+
+    <section id="seleccionar-mascota">
+        <div class="seccion">
+            <div class="logoPoke">
+                <img src="./imagenes/International_Pokémon_logo.svg.png" class="logo">
+            </div>
+            <!-- <h1 class="titulo">💧🔥🌱</h1> -->
+            <div class="cuadro">
+
+                <h2>Elije tu Printemon con sus poderes:</h2>
+                <h2 class="remember">Poderes ganadores:</h2>
+                <div class="reglas">
+
+                    <div class="beats">
+                        <img class="muestra-poderes" src="./imagenes/1024px-Pokémon_Water_Type_Icon.svg.png">
+                        <img class="muestra-poderes" src="./imagenes/39526.svg">
+                        <img class="muestra-poderes" src="./imagenes/1200px-Pokémon_Fire_Type_Icon.svg.png">
+                    </div>
+                    <div class="beats">
+                        <img class="muestra-poderes" src="./imagenes/1200px-Pokémon_Fire_Type_Icon.svg.png">
+                        <img class="muestra-poderes" src="./imagenes/39526.svg">
+                        <img class="muestra-poderes" src="./imagenes/1200px-Pokémon_Ground_Type_Icon.svg.png">
+                    </div>
+                    <div class="beats">
+                        <img class="muestra-poderes" src="./imagenes/1200px-Pokémon_Ground_Type_Icon.svg.png">
+                        <img class="muestra-poderes" src="./imagenes/39526.svg">
+                        <img class="muestra-poderes" src="./imagenes/1024px-Pokémon_Water_Type_Icon.svg.png">
+                    </div>
+                </div>
+                <div id="contenedorTarjetas" class="elegir-mascota">
+
+
+
+                </div>
+                <div class="boton-seleccionar">
+                    <button id="boton-mascota" class="seleccionar">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ver-mapa">
+        <h1 class="recorrer-mapa">Recorre el mapa con tu Mascota</h1>
+        <canvas id="mapa"></canvas>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <div class="logoPoke">
+            <img src="./imagenes/International_Pokémon_logo.svg.png" class="logo">
+        </div>
+        <!-- <h1 class="titulo">💧🔥🌱</h1> -->
+        <div id="elige-tu-ataque" class="cuadro2">
+            <h2>Elije tu poder para atacar:</h2>
+            <div class="ataque">
+                <img src="./imagenes/188918.png" alt="Ataque">
+            </div>
+            <div id="contenedorAtaques" class="botones-ataque">
+
+            </div>
+        </div>
+        <div class="pelea">
+            <div class="mascotas-elegidas">
+                <div class="vidasymascota">
+                    <div class="cuadro-mascota">
+                        <p class="mostrar-mascota">Jugador</p>
+                        <span id="imagen-jugador"></span>
+                        <span id="mascota-jugador"></span>
+                    </div>
+                    <p class="vidas">Victorias<span id="vidas-jugador">0</span></p>
+                </div>
+                <div id="img-ataque-jugador"></div>
+                <div id="versus">VS</div>
+                <div id="resultado"></div>
+                <div id="img-ataque-enemigo"></div>
+                <div class="vidasymascota">
+                    <div class="cuadro-mascota">
+                        <p class="mostrar-mascota">Enemigo</p>
+                        <span id="imagen-enemigo"></span>
+                        <span id="mascota-enemigo"></span>
+                    </div>
+                    <p class="vidas">Victorias<span id="vidas-enemigo">0</span></p>
+                </div>
+            </div>
+
+            <div id="mensajeFinal"></div>
+
+            <section id="reiniciar">
+                <button id="boton-revancha">¡Juega de nuevo!</button>
+            </section>
+        </div>
+    </section>
+    <script src="./js/mokepon.js"></script>
+</body>
+
+</html>

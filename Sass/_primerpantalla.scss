@@ -1,0 +1,196 @@
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2E69B3;
+    opacity: 80%;
+    width: 90%;
+    padding: 2.5rem;
+    border: 0.5em solid whitesmoke;
+    border-radius: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .remember {
+        font-size: 1.3rem;
+    }
+
+    .reglas {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        align-items: center;
+    
+        @media screen and (min-width: 575px) {
+            display: flex;
+            flex-direction: row;;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 8px;
+            margin-top: 8px;
+    
+        }
+    
+    }
+
+    .beats {
+        display: flex;
+        width: 15em;
+        margin: 0.3em 0px 0.2em 0px;
+        border: 0.02em solid black;
+        border-radius: 20px;
+        background-color: white;
+        opacity: 90%;
+        justify-content: center;
+    
+        @media screen and (min-width: 575px) {
+            margin: 1em 1em 0em 1em;
+    }
+    }
+}
+
+
+
+.elegir-mascota {
+    display: flex;
+    flex-direction: column;
+
+    .tarjeta-de-mokepon {
+        width: 15em;
+    }
+}
+
+.muestra-poderes {
+    display: flex;
+    margin-top: 0.02em;
+    width: 4em;
+}
+
+.elegir-mascota {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.elegir {
+
+    margin-top: 0.75rem;
+    height: 10rem;
+    margin-bottom: 0.5rem;
+    width: auto;
+
+}
+
+#seleccionar-ataque,
+.mascotas-elegidas {
+    justify-content: center;
+}
+
+.tarjeta-de-mokepon input {
+    display: none
+}
+
+.tarjeta-de-mokepon:has(input:checked) {
+    background-color: #FFCC01;
+    border-radius: 1.87rem;
+    font-size: 1.563rem;
+    color: rgb(10, 10, 10);
+}
+
+.tarjeta-de-mokepon:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(18, 18, 18);
+    border-radius: 1.87rem;
+
+}
+
+.seleccionar {
+    display: flex;
+    margin: 0.625rem auto 0.5rem;
+    background: rgb(236, 240, 236);
+    color: rgb(9, 9, 9);
+    height: 3.438rem;
+    width: 12.5rem;
+    border-radius: 1.87rem;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seleccionar:hover {
+    background-color: #FFCC01;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tarjeta-de-mokepon {
+    display: flex;
+    width: 200px;
+    height: 260px;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid rgb(252, 251, 251);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    flex-direction: column;
+    cursor: pointer;
+    /*Para poner la manito del click*/
+}
+
+
+
+
+.poderes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    width: 28px;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+
+}
+
+.div-poderes {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.remember {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+

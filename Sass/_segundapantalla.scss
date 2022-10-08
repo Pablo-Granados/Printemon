@@ -1,0 +1,73 @@
+.cuadro2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0.5rem;
+    background-color: #2E69B3;
+    opacity: 80%;
+    border: 0.2em solid whitesmoke;
+    border-radius: 2.5em;
+
+    h2 {
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    .ataque{
+        margin-top: 0.5em;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        img{
+            width: 5%;
+        }
+    }
+
+    .botones-ataque {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        bottom: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .boton-ataque {
+        display: flex;
+        margin: 0.25rem;
+        color: white;
+        width: 5rem;
+        height: 5rem;
+        font-size: 0.8rem;
+        border: 0.2rem solid white;
+        border-radius: 25px;
+        background: rgb(4, 4, 4);
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        img {
+            margin-top: -1rem;
+            height: 4rem;
+        }
+    
+        &:enabled:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(18, 18, 18);
+            border-radius: 30px;
+        }
+        
+        &:enabled:active {
+            background-color: #FFCC01;
+        }
+        &:disabled {
+            opacity: 40%;
+            cursor: not-allowed;      
+        }
+    }
+}
